@@ -22,7 +22,7 @@ class Counter:
            raise ValueError('Досягнуто максимуму')
 
    def step_down(self):
-       if self.current > self.max_value:
+       if self.current > self.min_value:
            self.current -= 1
        else:
            raise ValueError('Досягнуто мінімуму')
